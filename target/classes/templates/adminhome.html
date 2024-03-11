@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ADMIN HOME</title>
+<link rel="stylesheet" type="text/css" th:href="@{/adminhome.css}">
+</head>
+<body>
+	<div class="container" th:style="'background-image: url(' + @{/bt.jpg} + ')'">
+		<div class="links">
+			<a href="/newsong" class="add-song-button">ADD SONG</a>
+			<a href="/viewsongs" class="add-song-button">VIEW SONGS</a>
+			<a href="/createplaylist" class="add-song-button">CREATE PLAYLIST</a>
+			<a href="/viewplaylists" class="add-song-button">VIEW PLAYLISTS</a>
+			<!-- <form action="/updateplaylist" method="post">
+			<input type="submit" class="add-song-button" value="EDIT PLAYLISTS">
+			</form> -->
+			<form action="/logout">
+                <a href="/logout" class="add-song-button">LOGOUT</a>
+            </form>
+		</div>
+		<img th:src="@{/tree.jpg}" alt="Your Image" class="music-image">
+	</div>
+</body>
+</html>

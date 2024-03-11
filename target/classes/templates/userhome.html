@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>USER HOME PAGE</title>
+<link rel="stylesheet" type="text/css" th:href="@{/userhome.css}">
+</head>
+<body>
+    <div class="container" th:style="'background-image: url(' + @{/bt4.jpg} + ')'">
+        <div class="links">
+            <!-- <form action="/playsongs">
+                <a href="/playsongs" class="add-song-button">PLAY SONGS</a>
+            </form> -->
+            <form action="/pay">
+                <a href="/pay" class="add-song-button">GET PREMIUM</a>
+            </form>
+            <br><br><br><br>
+            <form action="/logout">
+                <a href="/logout" class="add-song-button">LOGOUT</a>
+            </form>
+        </div>
+        <div class="music-image">
+		<img th:src="@{/tree4.jpg}" alt="Your Image" class="music-image">
+        </div>
+    </div>
+</body>
+</html>

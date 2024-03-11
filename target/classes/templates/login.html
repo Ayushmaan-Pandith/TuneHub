@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<!-- <meta charset="UTF-8">
+<title>LOGIN</title>
+</head>
+<body>
+	<form action="validate" method="post" >
+
+		<h2>USER LOGIN</h2>
+		email
+		<label>Email: </label><br> <input type="email" name="email"
+			placeholder="Email"> <br>
+		<br>
+		password
+		<label>Password: </label><br> <input type="password"
+			name="password" placeholder="Password"> <br>
+		<br>
+		submit button
+		<input type="submit" value="LOGIN" name="login">
+		<br><br>
+	<a href="/registration" style="text-decoration: none; color: black;">REGISTER</a>
+
+	</form>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+</head>
+<body style="background-color: #f0f0f0; font-family: Arial, sans-serif;">
+	<form action="/validate" method="post"
+		style="max-width: 300px; margin: 50px auto; padding: 10px 20px; background-color: #ffffff; box-shadow: 0px 0px 10px 0px #000000;">
+		<h2 style="text-align: center; color: #333333;">Login</h2>
+		<label for="email" style="font-size: 16px; color: #333333;">Email:</label>
+		<input type="email" id="email" name="email"
+			placeholder="Enter your email"
+			style="width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box;"
+			required> <label for="password"
+			style="font-size: 16px; color: #333333;">Password:</label> <input
+			type="password" id="password" name="password"
+			placeholder="Enter your password"
+			style="width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box;"
+			required> <input type="submit" value="LOGIN" name="login"
+			style="width: 100%; background-color: #871746; color: #CB9A9F; padding: 14px 20px; margin: 10px 0; border: none; cursor: pointer;border-radius: 10px;">
+	</form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" th:href="@{/login.css}">
+</head>
+<body>
+	<div class="main-container">
+		<div class="img-container">
+			<img th:src="@{/blossom.jpg}" alt="Music Image" class="music-image">
+		</div>
+		<form action="/validate" method="post" class="form">
+			<h2 class="form-title">Login</h2>
+			<label for="email" class="label">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email" class="input" required> 
+			<label for="password" class="label">Password:</label> 
+			<input type="password" id="password" name="password" placeholder="Enter your password" class="input" required> 
+			<input type="submit" value="LOGIN" name="login" class="submit-button">
+		</form>
+	</div>
+</body>
+</html>
+

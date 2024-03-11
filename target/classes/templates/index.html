@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>INDEX</title>
+<link rel=stylesheet type="text/css" th:href="@{/index.css}">
+</head>
+<body>
+	<div class="container" th:style="'background-image: url(' + @{/bt2.jpg} + ')'">
+		<div class="links">
+			<a href="/login" class="indexpage">Login</a>	
+			<a href="/registration" class="indexpage">REGISTER</a>
+		</div>
+		<img th:src="@{/tree2.jpg}" alt="Music Image" class="music-image">
+	</div>
+</body>
+</html>
+
