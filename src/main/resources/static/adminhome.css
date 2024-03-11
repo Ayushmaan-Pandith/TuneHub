@@ -1,0 +1,61 @@
+body {
+    background-color: #FFD1DC;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('@{/bt.jpg}');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-song-button {
+	color: transparent;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 30px 50px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FFD1DC;
+    border: 3px solid #FFD1DC;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.add-song-button:hover {
+    opacity:0.8;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #871746;
+}
+
+.music-image {
+    border-radius: 20px;
+    width: 600px;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    animation: updown 2s infinite;
+}
+
+@keyframes updown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}

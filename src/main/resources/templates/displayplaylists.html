@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Playlists</title>
+<link rel="stylesheet" type="text/css" th:href="@{/displaysongs.css}">
+<style>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+	<h1>Playlists</h1>
+	<table>
+		<tr>
+			<th>Playlist Name</th>
+			<th>Songs</th>
+		</tr>
+		<tr th:each="playlist : ${playlists}">
+			<td th:text="${playlist.name}"></td>
+			<td>
+				<ul>
+					<li th:each="song : ${playlist.song}"><span  th:text="${song.name}"></span>
+						<audio controls="controls">
+							<source th:src="${song.link}">
+						</audio>
+					</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

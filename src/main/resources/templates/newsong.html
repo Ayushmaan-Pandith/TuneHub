@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="addsong" method="post">
+		<label>Song Name: </label><br>
+		<input type="text" name="name" placeholder="Name of the song">
+		<br><br>
+		<label>Artist: </label><br>
+		<input type="text" name="artist" placeholder="Name of the artist">
+		<br><br>
+		<label>Genre: </label><br>
+		<input type="text" name="genre" placeholder="Name of the genre">
+		<br><br>
+		<label>Link: </label><br>
+		<input type="text" name="link" placeholder="Enter the link of the song">
+		<br><br>
+		<input type="submit" name="newsong" value="ADDSONG">
+	</form>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Song</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/newsong.css}">
+</head>
+<body>
+    <div class="main-container">
+        <div class="img-container">
+            <img class="music-image" th:src="@{/tree3.jpg}" alt="Image">
+        </div>
+        <div class="form">
+            <h2 class="form-title">Add Song</h2>
+            <form action="#" th:action="@{/addsong}" method="post" class="add-song-form">
+                <label for="name" class="label">Song Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter song name" class="input">
+                <label for="artist" class="label">Artist:</label>
+                <input type="text" id="artist" name="artist" placeholder="Enter artist name" class="input">
+                <label for="genre" class="label">Genre:</label>
+                <input type="text" id="genre" name="genre" placeholder="Enter genre" class="input">
+                <label for="link" class="label">Link:</label>
+                <input type="text" id="link" name="link" placeholder="Enter song link" class="input">
+                <input type="submit" value="ADD SONG" name="newsong" class="submit-button">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
